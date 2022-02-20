@@ -51,8 +51,8 @@ def handle_text_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             [
-                TextSendMessage(text=profile.display_name + "様　メッセージありがとうございます。"),
-                TextSendMessage(text="Received message: " + text + "に該当する返答はありません。")
+                TextSendMessage(text=profile.display_name + "ok"),
+                TextSendMessage(text="Received message: " + text + "")
             ],
         )
     else:
