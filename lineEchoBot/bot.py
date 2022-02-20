@@ -52,7 +52,7 @@ def handle_text_message(event):
             event.reply_token,
             [
                 TextSendMessage(text=profile.display_name + "ok"),
-                TextSendMessage(text="Received message: " + text + "")
+                TextSendMessage(text="Received message: " + text + "y")
             ],
         )
     else:
