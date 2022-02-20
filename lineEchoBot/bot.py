@@ -52,7 +52,7 @@ def handle_text_message(event):
             event.reply_token,
             [
                 TextSendMessage(text=profile.display_name + "ok"),
-                TextSendMessage(text="Received message: " + text + "y")
+                TextSendMessage(text=text + "ですね")
             ],
         )
     else:
@@ -62,6 +62,7 @@ def handle_text_message(event):
                 TextSendMessage(text="Received message: " + text)
             ]
         )
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=8000, debug=True)
